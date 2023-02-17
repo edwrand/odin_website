@@ -31,13 +31,14 @@ ul {
 
 .poop {
     padding: 10px;
+    border: 10px;
     background-color: #dddddd;
     font-family: sans-serif;
 }
 
 .homepage {
     font-family: sans-serif;
-    padding: 10px;
+    padding: 8px;
 }
 
 .navbar {
