@@ -1,5 +1,10 @@
 /* styles.css */
 
+* {
+    border: 2px solid black;
+    padding: 25px;
+}
+
 div {
     border: 1px solid black;
 }
@@ -10,30 +15,43 @@ p {
 
 h1 {
     font-family: sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
 }
 
 img {
     height: auto;
     width: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
 }
 
 ul {
     list-style-type: none;
     margin: 20px;
     padding: 20px;
-    color: blue;
     font-size: large;
-    background-color: white;
     font-family: sans-serif;
     border-spacing: 50cm;
     display: block;
 }
 
 .poop {
-    padding: 10px;
+    padding: 15px;
     border: 10px;
-    background-color: #dddddd;
     font-family: sans-serif;
+    text-align: center;
 }
 
 .homepage {
@@ -42,7 +60,6 @@ ul {
 }
 
 .navbar {
-    background-color: #dddddd;
     font-family: sans-serif;
     padding: 10px;
 }
@@ -51,10 +68,15 @@ ul {
     padding-left: 10px;
     display: block;
     font-family: sans-serif;
+    text-size-adjust: 200%;
 }
 
 .indent2 {
     padding-left: 10px;
     display: block;
+    font-family: sans-serif;
+}
+
+.styled {
     font-family: sans-serif;
 }
