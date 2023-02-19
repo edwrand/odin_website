@@ -1,12 +1,19 @@
 /* styles.css */
 
+/* padding increases the space between the border of a box and the content of the box.
+
+margin increases the space between the borders of a box and the borders of adjacent boxes.
+
+border adds space (even if it’s only a pixel or two) between the margin and the padding. */
+
 * {
     border: 2px solid black;
     padding: 25px;
 }
 
-div {
-    border: 1px solid black;
+body {
+    width: 1250px;
+    margin: 0 auto;
 }
 
 p {
@@ -47,7 +54,7 @@ ul {
     display: block;
 }
 
-.poop {
+.op {
     padding: 15px;
     border: 10px;
     font-family: sans-serif;
@@ -79,4 +86,69 @@ ul {
 
 .styled {
     font-family: sans-serif;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+HTML CSSResult Skip Results Iframe EDIT ON div {
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #EEEEEE;
+    border: 1px solid black;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.introduction {
+    background-color: #548CA8;
+}
+
+.main-content {
+    background-color: #476072;
+}
+
+.contact-us {
+    background-color: #334257;
+}
+
+/* flexbox css */
+.flex-container {
+    display: flex;
+    gap: 10px;
+    border: 1px solid blue;
+}
+
+/* this selector selects all divs inside of .flex-container */
+.flex-container {
+    /*flex-direction: column;*/
+}
+
+.flex-container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.flex-container .one {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    flex: 2;
 }
