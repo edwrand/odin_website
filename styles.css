@@ -15,14 +15,21 @@ border adds space (even if it’s only a pixel or two) between the margin and th
 body {
     width: 1250px;
     margin: 0 auto;
-    background: #1F2937;
-    border: 2px solid #F9FAF8;
+    background-image: url("images/space.jpeg");
+    opacity: calc(100% - 15%);
 }
 
 p {
     font-family: sans-serif;
     color: #F9FAF8;
     size: 24px;
+}
+
+a {
+    border-radius: 15px;
+    padding: 0px;
+    width: 50px;
+    height: 15px;
 }
 
 h1 {
@@ -51,6 +58,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 5%;
+}
+
+.bigger {
+    size-adjust: 200%;
 }
 
 ul {
@@ -104,7 +115,7 @@ HTML CSSResult Skip Results Iframe EDIT ON div {
     text-align: center;
     margin-bottom: 10px;
     color: #EEEEEE;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .highlight {
@@ -127,14 +138,16 @@ HTML CSSResult Skip Results Iframe EDIT ON div {
 .flex-container {
     display: flex;
     gap: 10px;
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: #476072;
 }
 
 /* this selector selects all divs inside of .flex-container */
 .flex-containerone {
     display: flex;
     gap: 100px;
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
+    background-color: lightseagreen;
 }
 
 .flex-container div {
@@ -153,6 +166,7 @@ HTML CSSResult Skip Results Iframe EDIT ON div {
     flex: 0;
 }
 
+/* button animation for the nav bar css */
 a:link,
 a:visited {
     background-color: green;
