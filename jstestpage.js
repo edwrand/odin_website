@@ -26,8 +26,8 @@ while (userflag < 5 || computerflag < 5) {
         }
         // adding an ability to exit the game
         elseif(playerChoice == 'exit') {
-            clear
-        }
+            break
+        };
         console.log(playerChoice + " is your choice")
         return playerChoice;
     }

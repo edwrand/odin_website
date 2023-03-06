@@ -41,7 +41,6 @@ h1 {
 h3 {
     font-family: sans-serif;
     color: #F9FAF8;
-    padding-left: 400px;
 }
 
 h2,
@@ -169,8 +168,8 @@ HTML CSSResult Skip Results Iframe EDIT ON div {
 /* button animation for the nav bar css */
 a:link,
 a:visited {
-    background-color: green;
-    color: white;
+    background-color: black;
+    color: gold;
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
@@ -179,7 +178,8 @@ a:visited {
 
 a:hover,
 a:active {
-    background-color: blue;
+    background-color: black;
+    color: red;
 }
 
 .datetime {
