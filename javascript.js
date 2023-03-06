@@ -49,3 +49,8 @@ for (let i = 1; i <= answer; i++) {
         console.log(i);
     }
 }
+
+// go back to top button
+const scrollToTopButton = document.getElementById("scroll-to-top");
+
+// Show the button when the user scrolls down 20px from the top of the document
