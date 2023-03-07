@@ -1,6 +1,6 @@
 // practicing some JavaScript
 
-// 
+// interactive button with mouseover and mouseout
 var button = document.getElementById("myButton");
 button.addEventListener("mouseover", function () {
     button.style.fontSize = "30px";
@@ -25,6 +25,8 @@ function showTime() {
         h = h - 12;
         session = "PM";
     }
+    // this statement is basically a shorthand for an if-else statement
+    // ? represents the if and : represents the else
     h = (h < 10) ? "0" + h : h;
     m = (m < 10) ? "0" + m : m;
     s = (s < 10) ? "0" + s : s;
@@ -34,6 +36,34 @@ function showTime() {
 }
 showTime();
 
+// random quote generator
+var quotes = [
+    {
+        text: "The only way to do great work is to love what you do.",
+        author: "Steve Jobs"
+    },
+    {
+        text: "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+        author: "Winston Churchill"
+    },
+    {
+        text: "The best way to predict the future is to invent it.",
+        author: "Alan Kay"
+    }
+];
+// get the random quote
+function getRandomQuote() {
+    var randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
+}
+// generate the quote
+function generateQuote() {
+    var quote = getRandomQuote();
+    document.getElementById("quote").innerHTML = quote.text;
+    document.getElementById("author").innerHTML = "- " + quote.author;
+}
+// when the window is loaded call the generateQuote function
+window.onload = generateQuote();
 
 // more practice 
 // if (condition)
@@ -65,18 +95,6 @@ console.log(lastLetter("hello"))
 // fizbuzz
 
 //let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
-
-for (let i = 1; i <= answer; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
-    } else if (i % 3 === 0) {
-        console.log("Fizz");
-    } else if (i % 5 === 0) {
-        console.log("Buzz");
-    } else {
-        console.log(i);
-    }
-}
 
 // go back to top button
 const scrollToTopButton = document.getElementById("scroll-to-top");
