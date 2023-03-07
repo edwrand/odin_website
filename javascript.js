@@ -54,3 +54,33 @@ for (let i = 1; i <= answer; i++) {
 const scrollToTopButton = document.getElementById("scroll-to-top");
 
 // Show the button when the user scrolls down 20px from the top of the document
+
+
+// div.setAttribute('id', 'theDiv');                              
+// if id exists, update it to 'theDiv', else create an id
+// with value "theDiv"
+
+//div.getAttribute('id');                                        
+// returns value of specified attribute, in this case
+// "theDiv"
+
+// div.removeAttribute('id');                                     
+// removes specified attribute
+
+// adding and manipualting elements with DOM
+const container = document.querySelector('#container');
+
+content.classList.add('content');
+content.textContent = 'This is the glorious text-content!';
+
+container.appendChild(content);
+
+const redParagraph = document.createElement('p');
+redParagraph.textContent = "Hey I'm red!";
+
+const blueH3 = document.createElement('h3');
+blueH3.textContent = "I'm a blue h3!";
+
+const div = document.createElement('div');
+div.appendChild(redParagraph);
+div.appedChild(blueH3);

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <script src="javascript.js"></script>
+    <script src="javascript.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,11 @@
 </head>
 
 <body>
+    <!-- ways to inline js changes
+    div.style.background-color // doesn't work - attempts to subtract color from div.style.background
+div.style.backgroundColor // accesses the div's background-color style
+div.style['background-color'] // also works
+div.style.cssText = "background-color: white;" // ok in a string -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
