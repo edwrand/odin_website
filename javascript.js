@@ -1,10 +1,38 @@
 // practicing some JavaScript
 
-console.log("this is workiing?")
+// 
+var button = document.getElementById("myButton");
+button.addEventListener("mouseover", function () {
+    button.style.fontSize = "30px";
+    button.style.backgroundColor = "green";
+});
+button.addEventListener("mouseout", function () {
+    button.style.fontSize = "16px";
+    button.style.backgroundColor = "black";
+});
 
-//date time box
-const poopy = 47
-let poopies = 48
+// clock in javaScript
+function showTime() {
+    var date = new Date();
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
+    var session = "AM";
+    if (h == 0) {
+        h = 12;
+    }
+    if (h > 12) {
+        h = h - 12;
+        session = "PM";
+    }
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("clock").innerText = time;
+    setTimeout(showTime, 1000);
+}
+showTime();
 
 
 // more practice 
@@ -94,3 +122,16 @@ btn1.addEventListener('click', () => {
 function alertFunction() {
     alert("YAY! YOU DID IT!");
 }
+
+// example of callback function
+function myEventHandler(event) {
+    // do something, probably with 'event'
+}
+
+const element = document.querySelector("#myId");
+element.addEventListener('click', myEventHandler);
+
+// another example of callback function
+btn1.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+});
