@@ -84,3 +84,13 @@ blueH3.textContent = "I'm a blue h3!";
 const div = document.createElement('div');
 div.appendChild(redParagraph);
 div.appedChild(blueH3);
+
+// a special random button
+const btn1 = document.querySelector('#btn1');
+btn1.addEventListener('click', () => {
+    alert("Hello World");
+});
+
+function alertFunction() {
+    alert("YAY! YOU DID IT!");
+}
