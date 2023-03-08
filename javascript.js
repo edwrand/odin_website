@@ -1,16 +1,5 @@
 // practicing some JavaScript
 
-// interactive button with mouseover and mouseout
-var button = document.getElementById("myButton");
-button.addEventListener("mouseover", function () {
-    button.style.fontSize = "30px";
-    button.style.backgroundColor = "green";
-});
-button.addEventListener("mouseout", function () {
-    button.style.fontSize = "16px";
-    button.style.backgroundColor = "black";
-});
-
 // clock in javaScript
 function showTime() {
     var date = new Date();

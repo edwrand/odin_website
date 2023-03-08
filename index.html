@@ -18,42 +18,47 @@
 </head>
 
 <body>
+    <link rel="stylesheet" href="styles.css">
     <br>
     <br>
     <br>
     <br>
     <div id="clock"></div>
-    <link rel="stylesheet" href="styles.css">
-    <H1>Welcome to Ed's Website</H1>
-    <button onclick="alert('Hello World')">Click Me</button>
-    <button onclick="alertFunction()">CLICK ME BABY</button>
-    <button id='btn1' onclick="alertFunction()">CLICK ME BABY</button>
+    <H1 id="titleh1">Welcome to Ed's Website</H1>
+    <button id='gener' onclick="alert('Hello World')">Click Me</button>
+    <button id='gener' onclick="alertFunction()">CLICK meh</button>
+    <button id='gener' onclick="alertFunction()">hey</button>
     <!-- nav bar -->
     <header>
         <div class="flex-container">
-            <a id='myButton' class='links' href="index.html">Home</a>
-            <a id='myButton' class='links' href="./pages/about.html">About</a>
-            <a id='myButton' href="./pages/images.html">Images</a>
-            <a id='myButton' href="./pages/blog.html">Blog</a>
-            <a id='myButton' href="./pages/js_test_page.html">JS</a>
+            <a class='links' href="index.html">Home</a>
+            <a class='links' href="./pages/about.html">About</a>
+            <a href="./pages/images.html">Images</a>
+            <a href="./pages/blog.html">Blog</a>
+            <a href="./pages/js_test_page.html">JS</a>
         </div>
     </header>
+    <br>
     <!-- beginning of home page -->
     <div class="flex-containerone">
         <h1>→ Homepage ←</h1>
     </div>
+    <br>
     <div class="introduction">
         <h2>Introduction</h2>
         <h3>Hi, my name is Ed. I made this website as a place for me to dump my creative
             accomplishments. Here you can find blogs, art, random memes, and anything else I might post on a whim. I
             hope you enjoy your stay.</h3>
     </div>
+    <br>
     <!-- the random quote generator -->
     <div>
-        <h2 id="quote"></h2>
-        <h2 id="author"></h2>
+        <div class="flex-container">
+            <h2 id="quote"></h2>
+            <h2 id="author"></h2>
+        </div>
     </div>
-    <button onclick="generateQuote()">Generate Quote</button>
+    <button id='gener' onclick="generateQuote()">Generate Quote</button>
     <!-- end random quote gen-->
     <div class="main-content">
         <h2>My Info</h2>
