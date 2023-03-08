@@ -18,6 +18,10 @@
 </head>
 
 <body>
+    <br>
+    <br>
+    <br>
+    <br>
     <div id="clock"></div>
     <link rel="stylesheet" href="styles.css">
     <H1>Welcome to Ed's Website</H1>
@@ -25,13 +29,15 @@
     <button onclick="alertFunction()">CLICK ME BABY</button>
     <button id='btn1' onclick="alertFunction()">CLICK ME BABY</button>
     <!-- nav bar -->
-    <div class="flex-container">
-        <a id='myButton' class='links' href="index.html">Home</a>
-        <a id='myButton' class='links' href="./pages/about.html">About</a>
-        <a id='myButton' href="./pages/images.html">Images</a>
-        <a id='myButton' href="./pages/blog.html">Blog</a>
-        <a id='myButton' href="./pages/js_test_page.html">JS</a>
-    </div>
+    <header>
+        <div class="flex-container">
+            <a id='myButton' class='links' href="index.html">Home</a>
+            <a id='myButton' class='links' href="./pages/about.html">About</a>
+            <a id='myButton' href="./pages/images.html">Images</a>
+            <a id='myButton' href="./pages/blog.html">Blog</a>
+            <a id='myButton' href="./pages/js_test_page.html">JS</a>
+        </div>
+    </header>
     <!-- beginning of home page -->
     <div class="flex-containerone">
         <h1>→ Homepage ←</h1>
@@ -43,13 +49,15 @@
             hope you enjoy your stay.</h3>
     </div>
     <!-- the random quote generator -->
-    <p id="quote"></p>
-    <p id="author"></p>
+    <div>
+        <h2 id="quote"></h2>
+        <h2 id="author"></h2>
+    </div>
     <button onclick="generateQuote()">Generate Quote</button>
     <!-- end random quote gen-->
     <div class="main-content">
         <h2>My Info</h2>
-        <a style="text-align: center;"" href=" ./pages/contact.html">Contact</a>
+        <a style="text-align: center;" href=" ./pages/contact.html">Contact</a>
         <h4>Should you want to contact me, Ed, click the above button.</h4>
     </div>
     <a href="#" id="scroll-to-top">Top</a>
@@ -57,7 +65,7 @@
 
     <div class="contact-us">
         <h2>If you scrolled this far:</h2>
-        <img class='bigger' src="./images/randomdude.jpg">
+        <img id='editimg' class='bigger' src="./images/randomdude.jpg">
     </div>
     <button id="btn1">Click Me Too</button>
 </body>

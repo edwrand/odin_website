@@ -65,6 +65,20 @@ function generateQuote() {
 // when the window is loaded call the generateQuote function
 window.onload = generateQuote();
 
+// image slider
+const myImage = document.getElementById("editimg");
+
+// if you click on the image it changes to a dog
+myImage.onclick = () => {
+    const mySrc = myImage.getAttribute("src");
+    if (mySrc === "./images/randomdude.jpg") {
+        myImage.setAttribute("src", "./images/dog.jpeg");
+    } else {
+        myImage.setAttribute("src", "./images/randomdude.jpg");
+    }
+};
+
+
 // more practice 
 // if (condition)
 
