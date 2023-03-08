@@ -53,13 +53,13 @@ h1 {
 
 h3 {
     font-family: sans-serif;
-    color: #F9FAF8;
+    color: black;
 }
 
 h2,
 li {
     font-family: sans-serif;
-    color: #F9FAF8;
+    color: black;
 }
 
 img {
@@ -242,9 +242,10 @@ a:active {
 
 #clock {
     position: flex;
+    height: 10px;
     top: 0;
     right: 0;
-    font-size: 35px;
+    font-size: 25px;
     background-color: white;
     padding: 0.5rem;
     color: black;
