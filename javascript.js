@@ -1,5 +1,19 @@
 // practicing some JavaScript
 
+
+// adding a stock ticker to the nav bar
+const apiKey = '4RGREOYM32L88V7L';
+const symbol = 'AAPL'; // the stock symbol you want to display
+
+fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&apikey=${apiKey}`)
+    .then(response => response.json())
+    .then(data => {
+        // parse the data and display it in the HTML element
+        const stockTickerElement = document.getElementById('stock-ticker');
+        stockTickerElement.innerHTML = `${symbol}: $${data['Global Quote']['05. price']}`;
+    })
+    .catch(error => console.error(error));
+
 // clock in javaScript
 function showTime() {
     var date = new Date();
