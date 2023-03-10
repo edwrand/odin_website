@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "pg": "^8.10.0"
+  },
+  "name": "odin-links-and-images",
+  "description": "This is the skeleton for my soon to be personal webpage.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

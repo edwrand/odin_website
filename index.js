@@ -1,15 +1,16 @@
 // page for postgres database
 
 // imoporting the pg model
+// pool could also be called client but I followed a random
+// tutroial and it used pool so I'm using pool
 const { Pool } = require('pg')
 
 // creating a pool instance
 const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
-    database: 'your_database',
-    password: 'poop',
-    database: 'odin',
+    database: 'OdinData',
+    password: 'Jzqooi11',
     port: 5432 // default Postgres port
 })
 
