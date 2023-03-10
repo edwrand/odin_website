@@ -14,6 +14,19 @@ fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol}&
     })
     .catch(error => console.error(error));
 
+// adding a stock ticker to the nav bar
+const apiKey2 = '4RGREOYM32L88V7L';
+const symbol2 = 'MSFT'; // the stock symbol you want to display
+
+fetch(`https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=${symbol2}&apikey=${apiKey2}`)
+    .then(response => response.json())
+    .then(data => {
+        // parse the data and display it in the HTML element
+        const stockTickerElement = document.getElementById('stock-ticker2');
+        stockTickerElement.innerHTML = `${symbol2}: $${data['Global Quote']['05. price']}`;
+    })
+    .catch(error => console.error(error));
+
 // clock in javaScript
 function showTime() {
     var date = new Date();
@@ -133,7 +146,6 @@ const scrollToTopButton = document.getElementById("scroll-to-top");
 // adding and manipualting elements with DOM
 const container = document.querySelector('#container');
 
-content.classList.add('content');
 content.textContent = 'This is the glorious text-content!';
 
 container.appendChild(content);
