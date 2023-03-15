@@ -7,275 +7,275 @@ margin increases the space between the borders of a box and the borders of adjac
 border adds space (even if it’s only a pixel or two) between the margin and the padding. */
 
 * {
-    border: none;
-    padding: 25px;
-    font-family: sans-serif;
+  border: none;
+  padding: 25px;
+  font-family: sans-serif;
 }
 
 #gener {
-    background-color: #F9FAF8;
-    border: 2px solid black;
-    padding: 0px;
-    margin: 20px;
-    width: 50px;
-    height: 100px;
-    width: 100px;
+  background-color: #f9faf8;
+  border: 2px solid black;
+  padding: 0px;
+  margin: 20px;
+  width: 50px;
+  height: 100px;
+  width: 100px;
 }
 
 #stock-ticker,
 #stock-ticker2 {
-    display: inline-block;
-    color: green;
-    font-size: 20px;
+  display: inline-block;
+  color: green;
+  font-size: 20px;
 }
 
 body {
-    width: 1250px;
-    margin: 0 auto;
+  width: 1250px;
+  margin: 0 auto;
 }
 
 p {
-    font-family: sans-serif;
-    color: black;
-    size: 24px;
+  font-family: sans-serif;
+  color: black;
+  size: 24px;
 }
 
 a {
-    border-radius: 15px;
-    border: 2px solid black;
-    padding: 0px;
-    width: 50px;
-    height: 15px;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 0px;
+  width: 50px;
+  height: 15px;
 }
 
 #titleh1 {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 h1 {
-    font-family: sans-serif;
-    text-align: center;
-    color: black;
+  font-family: sans-serif;
+  text-align: center;
+  color: black;
 }
 
 h3 {
-    font-family: sans-serif;
-    color: black;
+  font-family: sans-serif;
+  color: black;
 }
 
 h2,
 li {
-    font-family: sans-serif;
-    color: black;
+  font-family: sans-serif;
+  color: black;
 }
 
 img {
-    height: auto;
-    width: 50px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 5%;
+  height: auto;
+  width: 50px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
 }
 
 .bigger {
-    size-adjust: 200%;
+  size-adjust: 200%;
 }
 
 ul {
-    list-style-type: none;
-    margin: 20px;
-    padding: 20px;
-    font-size: large;
-    font-family: sans-serif;
-    border-spacing: 50cm;
-    display: block;
+  list-style-type: none;
+  margin: 20px;
+  padding: 20px;
+  font-size: large;
+  font-family: sans-serif;
+  border-spacing: 50cm;
+  display: block;
 }
 
 .op {
-    padding: 15px;
-    border: 10px;
-    font-family: sans-serif;
-    text-align: center;
+  padding: 15px;
+  border: 10px;
+  font-family: sans-serif;
+  text-align: center;
 }
 
 .homepage {
-    font-family: sans-serif;
-    padding: 8px;
+  font-family: sans-serif;
+  padding: 8px;
 }
 
 .indent2 {
-    padding-left: 10px;
-    display: block;
-    font-family: sans-serif;
+  padding-left: 10px;
+  display: block;
+  font-family: sans-serif;
 }
 
 .styled {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
 /* Clear floats after image containers */
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 HTML CSSResult Skip Results Iframe EDIT ON div {
-    padding: 30px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #EEEEEE;
-    border: 2px solid black;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #eeeeee;
+  border: 2px solid black;
 }
 
 .highlight {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .introduction {
-    background-color: #548CA8;
+  background-color: #548ca8;
 }
 
 .main-content {
-    background-color: #476072;
+  background-color: #476072;
 }
 
 .contact-us {
-    background-color: #334257;
+  background-color: #334257;
 }
 
 /* flexbox css */
 .flex-container {
-    display: flex;
-    gap: 10px;
-    border: 2px solid black;
-    background-color: none;
+  display: flex;
+  gap: 10px;
+  border: 2px solid black;
+  background-color: none;
 }
 
 /* this selector selects all divs inside of .flex-container */
 .flex-containerone {
-    display: flex;
-    gap: 100px;
-    border: 2px solid black;
-    background-color: none;
+  display: flex;
+  gap: 100px;
+  border: 2px solid black;
+  background-color: none;
 }
 
 .flex-container div {
-    background-color: black;
-    height: 100px;
-    flex: 1;
+  background-color: black;
+  height: 100px;
+  flex: 1;
 }
 
 .flex-container .one {
-    background: none;
-    height: 100px;
-    flex: 2;
+  background: none;
+  height: 100px;
+  flex: 2;
 }
 
 .flex-container .links {
-    flex: 0;
+  flex: 0;
 }
 
 /* button animation for the nav bar css */
 a:link,
 a:visited {
-    background-color: white;
-    color: black;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 a:hover,
 a:active {
-    background-color: black;
-    color: red;
+  background-color: black;
+  color: red;
 }
 
 .datetime {
-    font-size: 16px;
-    padding: 24px;
-    color: black;
-    background: #444444;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    border-radius: 4px;
-    border-right: 10px #009578 solid;
-    width: 400px;
-    font-weight: 500;
-    font-family: "Inter", sans-serif;
+  font-size: 16px;
+  padding: 24px;
+  color: black;
+  background: #444444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border-right: 10px #009578 solid;
+  width: 400px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
 }
 
 .time {
-    font-size: 3em;
-    color: black;
+  font-size: 3em;
+  color: black;
 }
 
 .date {
-    margin-top: 12px;
-    font-size: 1.75em;
+  margin-top: 12px;
+  font-size: 1.75em;
 }
 
 /* for the scoll to top */
 #scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    background-color: #555;
-    color: white;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    font-size: 20px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #555;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 #scroll-to-top:hover {
-    background-color: #333;
-    cursor: pointer;
+  background-color: #333;
+  cursor: pointer;
 }
 
 #clock {
-    position: flex;
-    height: 10px;
-    top: 0;
-    right: 0;
-    font-size: 25px;
-    background-color: white;
-    padding: 0.5rem;
-    color: black;
+  position: flex;
+  height: 10px;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  background-color: white;
+  padding: 0.5rem;
+  color: black;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    padding: 0px;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 0px;
+  z-index: 999;
 }
 
 #quote,
 #author {
-    font-family: sans-serif;
-    background-color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: black;
-    margin: 0;
-    padding: 0;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  margin: 0;
+  padding: 0;
 }

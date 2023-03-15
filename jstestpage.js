@@ -1,5 +1,7 @@
 // test page which will only be linked to js_test_page.html
 
+
+
 // rock paper scissors game in console
 let answers = ["rock",
     "paper",

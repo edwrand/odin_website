@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <script src="javascript.js" defer></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ed's Homepage</title>
     <!-- messing with the background image in <style> -->
     <!-- inline css can be created using the style tag <style>
@@ -15,67 +14,68 @@
         }
     </style>
     -->
-</head>
+  </head>
 
-<body>
-    <link rel="stylesheet" href="styles.css">
-    <br>
-    <br>
-    <br>
-    <br>
-    <H1 id="titleh1">Welcome to Ed's Website</H1>
-    <button id='gener' onclick="alert('Hello World')">Click Me</button>
-    <button id='gener' onclick="alertFunction()">CLICK meh</button>
-    <button id='gener' onclick="alertFunction()">hey</button>
+  <body>
+    <link rel="stylesheet" href="styles.css" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="titleh1">Welcome to Ed's Website</h1>
+    <button id="gener" onclick="alert('Hello World')">Click Me</button>
+    <button id="gener" onclick="alertFunction()">CLICK meh</button>
+    <button id="gener" onclick="alertFunction()">hey</button>
     <!-- nav bar -->
     <header>
-        <div class="flex-container">
-            <div id="clock"></div>
-            <a class='links' href="index.html">Home</a>
-            <a class='links' href="./pages/about.html">About</a>
-            <a href="./pages/images.html">Images</a>
-            <a href="./pages/blog.html">Blog</a>
-            <a href="./pages/js_test_page.html">JS</a>
-            <a href=" ./pages/contact.html">Contact</a>
-        </div>
+      <div class="flex-container">
+        <div id="clock"></div>
+        <a class="links" href="index.html">Home</a>
+        <a class="links" href="./pages/about.html">About</a>
+        <a href="./pages/images.html">Images</a>
+        <a href="./pages/blog.html">Blog</a>
+        <a href="./pages/js_test_page.html">JS</a>
+        <a href=" ./pages/contact.html">Contact</a>
+      </div>
     </header>
-    <br>
+    <br />
     <!-- beginning of home page -->
     <div>
-        <div id="stock-ticker"></div>
-        <div id="stock-ticker2"></div>
+      <div id="stock-ticker"></div>
+      <div id="stock-ticker2"></div>
     </div>
     <div class="flex-containerone">
-        <h1>→ Homepage ←</h1>
+      <h1>→ Homepage ←</h1>
     </div>
-    <br>
+    <br />
     <div class="introduction">
-        <h2>Introduction</h2>
-        <h3>Hi, my name is Ed. I made this website as a place for me to dump my creative
-            accomplishments. Here you can find blogs, art, random memes, and anything else I might post on a whim. I
-            hope you enjoy your stay.</h3>
+      <h2>Introduction</h2>
+      <h3>
+        Hi, my name is Ed. I made this website as a place for me to dump my
+        creative accomplishments. Here you can find blogs, art, random memes,
+        and anything else I might post on a whim. I hope you enjoy your stay.
+      </h3>
     </div>
-    <br>
+    <br />
     <!-- the random quote generator -->
     <div>
-        <div class="flex-container">
-            <h2 id="quote"></h2>
-            <h2 id="author"></h2>
-        </div>
+      <div class="flex-container">
+        <h2 id="quote"></h2>
+        <h2 id="author"></h2>
+      </div>
     </div>
-    <button id='gener' onclick="generateQuote()">Generate Quote</button>
+    <button id="gener" onclick="generateQuote()">Generate Quote</button>
     <!-- end random quote gen-->
     <div class="main-content">
-        <h2>My Info</h2>
-        <a style="text-align: center;" href=" ./pages/contact.html">Contact</a>
-        <h4>Should you want to contact me, Ed, click the above button.</h4>
+      <h2>My Info</h2>
+      <a style="text-align: center" href=" ./pages/contact.html">Contact</a>
+      <h4>Should you want to contact me, Ed, click the above button.</h4>
     </div>
     <a href="#" id="scroll-to-top">Top</a>
-    <br>
+    <br />
     <div class="contact-us">
-        <h2>If you scrolled this far:</h2>
-        <img id='editimg' class='bigger' src="./images/randomdude.jpg">
+      <h2>If you scrolled this far:</h2>
+      <img id="editimg" class="bigger" src="./images/randomdude.jpg" />
     </div>
-</body>
-
+  </body>
 </html>
