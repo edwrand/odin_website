@@ -8,11 +8,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const pool = new Pool({
-    user: 'your_postgresql_user',
-    host: 'your_postgresql_host',
-    database: 'your_postgresql_database',
-    password: 'your_postgresql_password',
-    port: your_postgresql_port,
+    user: 'postgres',
+    host: '127.0.0.1',
+    database: 'OdinData',
+    password: 'Jzqooi11',
+    port: 3000,
 });
 
 app.post('/submitForm', async (req, res) => {
