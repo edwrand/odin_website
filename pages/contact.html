@@ -2,28 +2,70 @@
 <html lang="en">
 
 <head>
-    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAcyWJBzvj6F9J9I_rWcyODRHWKwo3Gnqk",
+            authDomain: "personal-website-29395.firebaseapp.com",
+            projectId: "personal-website-29395",
+            storageBucket: "personal-website-29395.appspot.com",
+            messagingSenderId: "212676964559",
+            appId: "1:212676964559:web:ce96df04ecb7fb8e0fc7ba",
+            measurementId: "G-EVQY1K0JSG",
+            databaseURL: "https://personal-website-29395-default-rtdb.firebaseio.com/",
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
 </head>
 
 <body>
-    <link rel="stylesheet" href="styles.css" />
     <form id="contact-form" onsubmit="submitForm(event)">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name1" name="name" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email1" name="email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message1" name="message" required></textarea>
 
         <button type="submit">Submit</button>
     </form>
-    <script src="script.js"></script>
+    <script>
+        const name1 = document.getElementById('name1');
+        const email1 = document.getElementById('email1');
+        const message1 = document.getElementById('message1');
+
+        function writeUserData(userID, name1, email1, message1) {
+            firebase.database().ref('users/' + userID).set({
+                name: name1,
+                email: email1,
+                message: message1
+            });
+        }
+
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+            const userID = Date.now(); // Create a unique userID based on the current timestamp
+            const nameValue = name1.value;
+            const emailValue = email1.value;
+            const messageValue = message1.value;
+
+            writeUserData(userID, nameValue, emailValue, messageValue);
+            document.getElementById("contact-form").reset(); // Reset the form after submission
+            alert('Message sent successfully!'); // Show a success message to the user
+        }
+    </script>
 </body>
 
 </html>
