@@ -3,6 +3,7 @@
     "pg": "^8.10.0"
   },
   "name": "odin-links-and-images",
+  "type": "module",
   "description": "This is the skeleton for my soon to be personal webpage.",
   "version": "1.0.0",
   "main": "index.js",
